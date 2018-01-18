@@ -68,10 +68,7 @@ def journeyman4():
         def print_info(self):
             print "Height:\t%d\nWeight:\t%d\nHair:\t%s\nEye:\t%s\n" % (self.height , self.weight , self.hair , self.eye)
             
-    Bill = Person(6, 180, "Brown", "Blue")
-    Bill.print_info()
+    Dallas = Person(6, 180, "Brown", "Blue")
+    Dallas.print_info()
         
     return
-    
-
-journeyman4()
