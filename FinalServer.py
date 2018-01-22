@@ -133,6 +133,17 @@ def handle_connection(usersock,userinfo):
     return
 
 def main():
+    
+    while(True):
+        server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server_sock.bind(('', 5555))
+        server_sock.listen(8)
+        usersock, userinfo = server_sock.accept()
+        
+        con_thread = threading.Thread(None, handle_connection, None, (usersock,userinfo))
+        con.thread.start()
+        
+
     return
 
 main()
